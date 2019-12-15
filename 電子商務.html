@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+		<title>Pankar</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script defer type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="icon" href="images/logo/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	
+<div id="app">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">    
+		<img src="logo/logo.png" width="100" height="100" alt="logo">
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#Home"><i class="fas fa-home"></i>{{Home}}<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="fa fa-phone"></i>{{Call_a_car}}</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-car"></i>{{Product}}
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" v-for="car in cars" href="#">{{car}}</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<i class="fas fa-user-cog"></i>{{Account}}
+				</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">{{Sign_in}}</a>
+				<a class="dropdown-item" href="#">{{Sign_up}}</a>
+				<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">管理員登入</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li>
+		</ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+	<noscript>
+		<strong>We're sorry but Pankar doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+	</noscript>
+	
+	<div  class="container" id="">
+		<div class="card" style="width: 18rem;">
+		<img src="https://images.wealth.com.tw/uploads/article/image/22524/rect_1200_600_%E6%9C%AA%E5%91%BD%E5%90%8D.JPG" class="card-img-top" alt="...">
+		<div class="card-body">
+			<h5 class="card-title">Model S - Tesla</h5>
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	</div>
+	</div>
+	
+	<div  class="container" id="">
+	
+	</div>
+	
+	<div  class="container" id="">
+	
+	</div>
+	
+	<div  class="container" id="">
+		
+	</div>
+</div>
+</body>
+</html>
